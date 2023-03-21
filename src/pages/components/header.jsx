@@ -16,7 +16,6 @@ import { BsTelephone } from "react-icons/bs";
 import { BiShoppingBag } from "react-icons/bi";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
-// import logo from "../../../public/images/resized-image.png";
 
 import { useState } from "react";
 
@@ -156,7 +155,7 @@ function Header() {
                 <Col xs={3}>
                   <Image
                     alt=""
-                    src="./images/resized-image.png"
+                    src="./images/logo.png"
                     width="64"
                     height="64"
                   />
@@ -193,7 +192,7 @@ function Header() {
                 <Col xs={3}>
                   <Image
                     alt=""
-                    src="./images/resized-image.png"
+                    src="./images/logo.png"
                     width="64"
                     height="64"
                   />
@@ -230,7 +229,7 @@ function Header() {
                 <Col xs={3}>
                   <Image
                     alt=""
-                    src="./images/resized-image.png"
+                    src="./images/logo.png"
                     width="64"
                     height="64"
                   />
@@ -267,7 +266,7 @@ function Header() {
                 <Col xs={3}>
                   <Image
                     alt=""
-                    src="./images/resized-image.png"
+                    src="./images/logo.png"
                     width="64"
                     height="64"
                   />

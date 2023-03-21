@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import {BsFacebook, BsInstagram, BsWhatsapp} from 'react-icons/bs'
-import logo from '../../../public/images/resized-image.png';
+import logo from '../../../public/images/logo.png';
 
 function Footer() {
   return (
