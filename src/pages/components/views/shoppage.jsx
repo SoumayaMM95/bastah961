@@ -14,8 +14,8 @@ import Filter from "../filter";
 import Banner from "../banner";
 import Product from "../product-list";
 import { GoSearch } from "react-icons/go";
-import { HiArrowRight } from "react-icons/hi";
 import { AiOutlineHome } from "react-icons/ai";
+import {BsArrowRight} from "react-icons/bs";
 
 function ShopPage() {
   return (
@@ -42,7 +42,7 @@ function ShopPage() {
             aria-controls="offcanvasNavbar-expand-md basic-navbar-nav"
             className="float-btn"
           >
-            <HiArrowRight className="text-white" />
+            <BsArrowRight className="text-white" />
           </Navbar.Toggle>
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-md`}

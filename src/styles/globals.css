@@ -111,13 +111,16 @@ input {
 
 .float-btn {
   box-shadow: none !important;
-  font-size: 1.2rem !important;
-  border: none !important;
-  background-color: rgb(150, 150, 150) !important;
-  padding: 5px !important;
-  border-radius: 0px 2px 2px 0px !important;
+  /* box-shadow: 0 3px #444 !important; */
+  font-size: 1.5rem !important;
+  background-color: #333 !important;
+  /* background-color: rgb(150, 150, 150) !important; */
+  padding: 3px 5px !important;
+  border-radius: 0px 5px 5px 0px !important;
   position: fixed;
   z-index: 99;
+
+  
 }
 
 .offcanvas {
