@@ -180,7 +180,7 @@ function Header() {
                   <p>
                     <b>Product Name</b>
                   </p>
-                  <span>30.00$</span>
+                  <span>{30.00*count}.00$</span>
                 </Col>
                 <Col xs={4}>
                   <InputGroup>
