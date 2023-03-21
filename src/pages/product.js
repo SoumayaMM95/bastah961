@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "./components/header";
-import ShopPage from "./components/views/shoppage";
 import Footer from "./components/footer";
+import ProductView from "./components/views/productview";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header />
-        <ShopPage />
+        <ProductView />
         <Footer />
       </div>
     </>

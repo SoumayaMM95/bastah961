@@ -9,10 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.12",
+    "@popperjs/core": "^2.11.6",
+    "@react-aria/ssr": "^3.5.0",
+    "@react-icons/all-files": "^4.1.0",
+    "bootstrap": "^5.2.3",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
+    "file-loader": "^6.2.0",
+    "jquery": "^3.6.4",
+    "multi-range-slider-react": "^2.0.2",
+    "mysql2": "^3.2.0",
     "next": "13.2.3",
+    "next-images": "^1.8.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.7.2",
+    "react-bootstrap-dropdown": "^0.3.0",
+    "react-bootstrap-sidebar-menu": "^2.0.3",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-image-gallery": "^1.2.11",
+    "react-owl-carousel": "^2.3.3",
+    "react-responsive-carousel": "^3.2.23",
+    "react-tabs": "^6.0.0",
+    "sass": "1.58.3",
+    "sequelize": "^6.29.0",
+    "slider": "^1.0.4",
+    "url-loader": "^4.1.1"
   }
 }
