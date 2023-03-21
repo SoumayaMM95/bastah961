@@ -35,7 +35,7 @@ function Header() {
                 <Navbar.Brand href="https://bastah961.vercel.app/">
                   <Image
                     alt=""
-                    src="./images/resized-image.png"
+                    src="./images/logo.png"
                     width="64"
                     height="64"
                     className="d-inline-block"
@@ -125,7 +125,7 @@ function Header() {
                 <Navbar.Brand href="https://bastah961.vercel.app/">
                   <Image
                     alt=""
-                    src="./images/resized-image.png"
+                    src="./images/logo.png"
                     width="50"
                     height="50"
                     className="d-inline-block"
