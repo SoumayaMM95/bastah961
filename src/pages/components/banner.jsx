@@ -2,9 +2,9 @@ import Carousel from "react-bootstrap/Carousel";
 
 import Image from "next/image";
 
-import image1 from "../../../public/images/banner1.png";
-import image2 from "../../../public/images/banner2.png";
-import image3 from "../../../public/images/banner3.png";
+import image1 from "../../../public/images/Banner1.png";
+import image2 from "../../../public/images/Banner2.png";
+import image3 from "../../../public/images/Banner3.png";
 
 function Banner() {
   return (
