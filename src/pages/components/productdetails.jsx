@@ -4,6 +4,7 @@ import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { BiShoppingBag } from "react-icons/bi";
 
 import { useState } from "react";
+
 function ProductDetails() {
   const [activeColor, setActiveColor] = useState(null);
   const [activeSize, setActiveSize] = useState(null);
@@ -24,6 +25,23 @@ function ProductDetails() {
     setActiveSize(size);
   }
 
+  let [count, setCount] = useState(0);
+  function incrementCount() {
+    if (!isNaN(count)) {
+      count = count + 1;
+    } else {
+      count = 0;
+    }
+    setCount(count);
+  }
+  function decrementCount() {
+    if (!isNaN(count) && count > 0) {
+      count = count - 1;
+    } else {
+      count = 0;
+    }
+    setCount(count);
+  }
   return (
     <div>
       <Card className="border border-0 pt-2">
@@ -80,26 +98,32 @@ function ProductDetails() {
         </div>
       </div>
       <hr className="p-0 m-0" />
-        <Form className="d-flex text-center p-4 gap-3">
+      <Form className="d-flex text-center p-4 gap-3">
         <InputGroup style={{ width: "150px" }}>
           <Button
             variant=""
             style={{ borderColor: "#ced4da" }}
             className="input-group-text bg-body"
+            onClick={decrementCount}
           >
             <AiOutlineMinus style={{ fontSize: "1.2rem" }} className="mb-1" />
           </Button>
-          <Form.Control type="number" className="p-2 text-center" />
+          <Form.Control
+            type="number"
+            className="p-2 text-center"
+            value={count}
+          />
           <Button
             variant=""
             style={{ borderColor: "#ced4da" }}
             className="input-group-text bg-body"
+            onClick={incrementCount}
           >
             <AiOutlinePlus style={{ fontSize: "1.2rem" }} className="mb-1" />
           </Button>
         </InputGroup>
         <Button style={{ width: "200px" }}>
-          <BiShoppingBag className="me-2 fs-4 mb-2"/>
+          <BiShoppingBag className="me-2 fs-4 mb-2" />
           Add to cart
         </Button>
       </Form>

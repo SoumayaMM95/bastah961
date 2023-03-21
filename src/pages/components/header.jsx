@@ -16,14 +16,30 @@ import { BsTelephone } from "react-icons/bs";
 import { BiShoppingBag } from "react-icons/bi";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
-
 import { useState } from "react";
 
 function Header() {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  let [count, setCount] = useState(1);
+  function incrementCount() {
+    if (!isNaN(count)) {
+      count = count + 1;
+    } else {
+      count = 0;
+    }
+    setCount(count);
+  }
+  function decrementCount() {
+    if (!isNaN(count) && count > 1) {
+      count = count - 1;
+    } else {
+      count = 1;
+    }
+    setCount(count);
+  }
   return (
     <>
       <div className="d-none d-sm-block" style={{ marginBottom: "90px" }}>
@@ -150,7 +166,7 @@ function Header() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ListGroup variant="flush">
-            <ListGroup.Item className="px-0">
+            <ListGroup.Item className="px-0 my-2">
               <Row className="align-items-center">
                 <Col xs={3}>
                   <Image
@@ -172,14 +188,20 @@ function Header() {
                       variant=""
                       style={{ borderColor: "#ced4da" }}
                       className="input-group-text bg-body p-1"
+                      onClick={decrementCount}
                     >
                       <AiOutlineMinus style={{ fontSize: "1rem" }} />
                     </Button>
-                    <Form.Control type="number" className="text-center" />
+                    <Form.Control
+                      type="number"
+                      className="text-center"
+                      value={count}
+                    />
                     <Button
                       variant=""
                       style={{ borderColor: "#ced4da" }}
                       className="input-group-text bg-body p-1"
+                      onClick={incrementCount}
                     >
                       <AiOutlinePlus style={{ fontSize: "1rem" }} />
                     </Button>
@@ -187,7 +209,7 @@ function Header() {
                 </Col>
               </Row>
             </ListGroup.Item>
-            <ListGroup.Item className="px-0">
+            {/* <ListGroup.Item className="px-0 my-2">
               <Row className="align-items-center">
                 <Col xs={3}>
                   <Image
@@ -209,14 +231,20 @@ function Header() {
                       variant=""
                       style={{ borderColor: "#ced4da" }}
                       className="input-group-text bg-body p-1"
+                      onClick={decrementCount}
                     >
                       <AiOutlineMinus style={{ fontSize: "1rem" }} />
                     </Button>
-                    <Form.Control type="number" className="text-center" />
+                    <Form.Control
+                      type="number"
+                      className="text-center"
+                      value={count}
+                    />
                     <Button
                       variant=""
                       style={{ borderColor: "#ced4da" }}
                       className="input-group-text bg-body p-1"
+                      onClick={incrementCount}
                     >
                       <AiOutlinePlus style={{ fontSize: "1rem" }} />
                     </Button>
@@ -224,7 +252,7 @@ function Header() {
                 </Col>
               </Row>
             </ListGroup.Item>
-            <ListGroup.Item className="px-0">
+            <ListGroup.Item className="px-0 my-2">
               <Row className="align-items-center">
                 <Col xs={3}>
                   <Image
@@ -246,14 +274,20 @@ function Header() {
                       variant=""
                       style={{ borderColor: "#ced4da" }}
                       className="input-group-text bg-body p-1"
+                      onClick={decrementCount}
                     >
                       <AiOutlineMinus style={{ fontSize: "1rem" }} />
                     </Button>
-                    <Form.Control type="number" className="text-center" />
+                    <Form.Control
+                      type="number"
+                      className="text-center"
+                      value={count}
+                    />
                     <Button
                       variant=""
                       style={{ borderColor: "#ced4da" }}
                       className="input-group-text bg-body p-1"
+                      onClick={incrementCount}
                     >
                       <AiOutlinePlus style={{ fontSize: "1rem" }} />
                     </Button>
@@ -261,7 +295,7 @@ function Header() {
                 </Col>
               </Row>
             </ListGroup.Item>
-            <ListGroup.Item className="px-0">
+            <ListGroup.Item className="px-0 my-2">
               <Row className="align-items-center">
                 <Col xs={3}>
                   <Image
@@ -283,21 +317,27 @@ function Header() {
                       variant=""
                       style={{ borderColor: "#ced4da" }}
                       className="input-group-text bg-body p-1"
+                      onClick={decrementCount}
                     >
                       <AiOutlineMinus style={{ fontSize: "1rem" }} />
                     </Button>
-                    <Form.Control type="number" className="text-center" />
+                    <Form.Control
+                      type="number"
+                      className="text-center"
+                      value={count}
+                    />
                     <Button
                       variant=""
                       style={{ borderColor: "#ced4da" }}
                       className="input-group-text bg-body p-1"
+                      onClick={incrementCount}
                     >
                       <AiOutlinePlus style={{ fontSize: "1rem" }} />
                     </Button>
                   </InputGroup>
                 </Col>
               </Row>
-            </ListGroup.Item>
+            </ListGroup.Item> */}
           </ListGroup>
         </Offcanvas.Body>
       </Offcanvas>
