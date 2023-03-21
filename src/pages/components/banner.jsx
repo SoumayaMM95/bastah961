@@ -16,10 +16,10 @@ function Banner() {
           />
         </Carousel.Item>
         <Carousel.Item>
-          <Image className="d-block w-100" alt="Second slide" src={image1} />
+          <Image className="d-block w-100 h-auto" alt="Second slide" src={image1} />
         </Carousel.Item>
         <Carousel.Item>
-          <Image className="d-block w-100" alt="Third slide" src={image1} />
+          <Image className="d-block w-100 h-auto" alt="Third slide" src={image1} />
         </Carousel.Item>
       </Carousel>
     </div>
