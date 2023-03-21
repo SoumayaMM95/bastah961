@@ -44,14 +44,14 @@ function Filter() {
             className="pb-1"
           />
             <Row>
-              <Col sm={6}>
+              <Col xs={6}>
                 <input
                   type="text"
                   placeholder="min $"
                   className="form-control"
                 />
               </Col>
-              <Col sm={6}>
+              <Col xs={6}>
                 <input
                   type="text"
                   placeholder="max $"
