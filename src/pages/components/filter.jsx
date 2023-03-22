@@ -2,47 +2,79 @@ import { Col, Row, Accordion, Form } from "react-bootstrap";
 function Filter() {
   return (
     <>
-      <Accordion
-        defaultActiveKey={["0"]}
-        alwaysOpen
-      >
+      <Accordion defaultActiveKey={["0"]} alwaysOpen>
         <Accordion.Item eventKey="0" className="border border-0">
           <Accordion.Header>All Categories</Accordion.Header>
           <Accordion.Body>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">First Category</li>
-              <li className="list-group-item">Second Category</li>
-              <li className="list-group-item">Third Category</li>
-              <li className="list-group-item">Fourth Category</li>
-              <li className="list-group-item">Fifth Category</li>
+              <li className="list-group-item">
+                <Form.Check
+                  type="checkbox"
+                  id="category1"
+                  name="category1"
+                  label="First Category"
+                />
+              </li>
+              <li className="list-group-item">
+                <Form.Check
+                  type="checkbox"
+                  id="category2"
+                  name="category2"
+                  label="Second Category"
+                />
+              </li>
+              <li className="list-group-item">
+                <Form.Check
+                  type="checkbox"
+                  id="category3"
+                  name="category3"
+                  label="Third Category"
+                />
+              </li>
+              <li className="list-group-item">
+                <Form.Check
+                  type="checkbox"
+                  id="category4"
+                  name="category4"
+                  label="Fourth Category"
+                />
+              </li>
+              <li className="list-group-item">
+                <Form.Check
+                  type="checkbox"
+                  id="category5"
+                  name="category5"
+                  label="Fifth Category"
+                />
+              </li>
             </ul>
           </Accordion.Body>
         </Accordion.Item>
-        <hr className="border border-2"/>
+        <hr className="border border-2" />
         <Accordion.Item eventKey="1" className="border border-0">
           <Accordion.Header>Filter by price</Accordion.Header>
           <Accordion.Body>
-          <Form.Check
-            type='radio'
-            id='pricefilter'
-            name='pricefilter'
-            label="price1-price2"
-            className="pb-1"
-          />
-          <Form.Check
-            type='radio'
-            id='pricefilter'
-            name='pricefilter'
-            label="price3-price3"
-            className="pb-1"
-          />
-          <Form.Check
-            type='radio'
-            id='pricefilter'
-            name='pricefilter'
-            label=">price3"
-            className="pb-1"
-          />
+            <Form.Check
+              type="radio"
+              id="pricefilter"
+              name="pricefilter"
+              label="price1-price2"
+              className="pb-2"
+            />
+            <Form.Check
+              type="radio"
+              id="pricefilter"
+              name="pricefilter"
+              label="price3-price3"
+              className="pb-2"
+            />
+            <Form.Check
+              type="radio"
+              id="pricefilter"
+              name="pricefilter"
+              label=">price3"
+              className="pb-2"
+            />
             <Row>
               <Col xs={6}>
                 <input
@@ -61,11 +93,11 @@ function Filter() {
             </Row>
           </Accordion.Body>
         </Accordion.Item>
-        <hr className="border border-2"/>
+        <hr className="border border-2" />
         <Accordion.Item eventKey="2" className="border border-0">
           <Accordion.Header>Size</Accordion.Header>
           <Accordion.Body>
-            <div className="form-check">
+            <div className="form-check pb-2">
               <input
                 className="form-check-input"
                 type="checkbox"
@@ -76,7 +108,7 @@ function Filter() {
                 Small
               </label>
             </div>
-            <div className="form-check">
+            <div className="form-check pb-2">
               <input
                 className="form-check-input"
                 type="checkbox"
@@ -87,7 +119,7 @@ function Filter() {
                 Medium
               </label>
             </div>
-            <div className="form-check">
+            <div className="form-check pb-2">
               <input
                 className="form-check-input"
                 type="checkbox"
@@ -98,7 +130,7 @@ function Filter() {
                 Large
               </label>
             </div>
-            <div className="form-check">
+            <div className="form-check pb-2">
               <input
                 className="form-check-input"
                 type="checkbox"

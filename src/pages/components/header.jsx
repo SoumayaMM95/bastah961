@@ -160,7 +160,7 @@ function Header() {
           </Container>
         </Navbar>
       </div>
-      <Offcanvas show={show} onHide={handleClose} placement="end">
+      <Offcanvas className="pt-3" show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Your Cart</Offcanvas.Title>
         </Offcanvas.Header>

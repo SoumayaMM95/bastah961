@@ -220,3 +220,9 @@ input[type=number] {
   border: none !important;
   color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity)) !important;
 }
+
+
+.MuiButtonBase-root:hover{
+  color: black !important;
+  /* box-shadow: 1px 1px #fcbfa0; */
+}
