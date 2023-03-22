@@ -17,7 +17,7 @@ function ProductView() {
     <>
       <div className="bg-white">
         <Breadcrumb className="ps-5 ms-4 pt-3 d-none d-sm-block">
-          <Breadcrumb.Item href="#" className="m-0">
+          <Breadcrumb.Item href="/" className="m-0">
             <AiOutlineHome style={{ color: "#ff602d", fontSize: "1.2rem" }} />
           </Breadcrumb.Item>
           <Breadcrumb.Item active>Product</Breadcrumb.Item>
@@ -25,7 +25,7 @@ function ProductView() {
 
         {/* mobile  */}
         <Breadcrumb className="ms-2 pt-3 d-block d-sm-none">
-          <Breadcrumb.Item href="#" className="m-0">
+          <Breadcrumb.Item href="/" className="m-0">
             <AiOutlineHome style={{ color: "#ff602d", fontSize: "1.2rem" }} />
           </Breadcrumb.Item>
           <Breadcrumb.Item active>Product</Breadcrumb.Item>

@@ -47,7 +47,7 @@ function Header() {
           <Container>
             <Row className="w-100 pt-3">
               <Col lg={2} className="ps-5">
-                <Navbar.Brand href="https://bastah961.vercel.app/">
+                <Navbar.Brand href="/">
                   <Image
                     alt=""
                     src="./images/logo.png"
@@ -137,7 +137,7 @@ function Header() {
           <Container fluid>
             <Row className="w-100 py-2">
               <Col xs={8}>
-                <Navbar.Brand href="https://bastah961.vercel.app/">
+                <Navbar.Brand href="/">
                   <Image
                     alt=""
                     src="./images/logo.png"
