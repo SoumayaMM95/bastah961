@@ -17,41 +17,8 @@ import { GoSearch } from "react-icons/go";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 
-// import React, { useEffect, useState } from 'react';
-
-// export async function getStaticProps() {
-//   const res = await fetch('/api/product/getall');
-//   const products = await res.json();
-  
-//   // Check if data is an array
-//   if (!Array.isArray(data.results)) {
-//     throw new Error('Data is not an array');
-//   }
-
-//   return {
-//     props: {
-//       products: products.results
-//     }
-//   }
-// }
-
-
 function ShopPage() {
-// function ShopPage( { products } ) {
-  
-  // const [products, setData] = useState([]);
 
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const response = await fetch("/api/product/getall");
-  //     const products = await response.json();
-  //     setData(products);
-  //   }
-
-  //   fetchData();
-  // }, []);
-
- 
   return (
     <>
       <div className="bg-white">
@@ -143,7 +110,6 @@ function ShopPage() {
                     Price={product.Price}
                   />
                 ))} */}
-                
               </Row>
             </Col>
           </Row>
